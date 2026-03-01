@@ -3,246 +3,131 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DekhoDeal — Smart Affiliate Deals</title>
-  <meta name="description" content="Curated affiliate deals, price drops, and smart buying guides." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>DekhoDeal | Daily Affiliate Deals</title>
+  <meta name="description" content="DekhoDeal is a text-first affiliate deals site. Visit products page for latest shopping offers and direct buy links." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="DekhoDeal | Daily Affiliate Deals" />
+  <meta property="og:description" content="Home page with deal updates info and direct links to products, legal and contact pages." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dekhodeal.website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="canonical" href="https://dekhodeal.website/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand">
-        <div class="logo">DD</div>
-        <div class="brand-text">
-          <span class="name">DekhoDeal</span>
-          <span class="tag">Curated affiliate deals, no noise</span>
-        </div>
+    <div class="container">
+      <div class="brand-row">
+        <a href="/" class="brand-home" aria-label="DekhoDeal Home">
+          <img src="logo.svg" class="site-logo" alt="DekhoDeal logo" width="220" height="60" />
+        </a>
       </div>
-      <nav class="nav">
-        <a href="#categories">Categories</a>
-        <a href="#featured">Featured</a>
-        <a href="#guides">Buying Guides</a>
-        <a href="#faq">FAQ</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/legal.html">Legal</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
       </nav>
-      <a class="cta" href="#featured">See Deals</a>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Dekho. Compare. Save.</p>
-          <h1>Affiliate deals that feel like insider tips.</h1>
-          <p class="sub">We track price drops, highlight value picks, and link you to trusted stores. Clear picks, zero filler.</p>
-          <div class="hero-actions">
-            <a class="cta" href="#featured">Browse Today’s Picks</a>
-            <button class="ghost" id="notifyBtn">Get Price Alerts</button>
-          </div>
-          <div class="hero-badges">
-            <span>Updated daily</span>
-            <span>Verified links</span>
-            <span>No spam lists</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="deal-mini">
-            <div>
-              <p class="deal-title">Wireless Earbuds</p>
-              <p class="deal-desc">Noise cancel, 30h battery</p>
-            </div>
-            <div class="deal-price">
-              <span class="old">$129</span>
-              <span class="new">$79</span>
-            </div>
-          </div>
-          <div class="deal-mini">
-            <div>
-              <p class="deal-title">Smartwatch Pro</p>
-              <p class="deal-desc">AMOLED, 2-week battery</p>
-            </div>
-            <div class="deal-price">
-              <span class="old">$199</span>
-              <span class="new">$149</span>
-            </div>
-          </div>
-          <div class="deal-mini">
-            <div>
-              <p class="deal-title">Kitchen Blender</p>
-              <p class="deal-desc">1200W, 3 jars</p>
-            </div>
-            <div class="deal-price">
-              <span class="old">$99</span>
-              <span class="new">$59</span>
-            </div>
-          </div>
-          <p class="micro">Sample deals shown for layout only.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="categories" class="section categories">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Top Categories</h2>
-          <p>Pick a category and jump into verified affiliate offers.</p>
-        </div>
-        <div class="grid cards">
-          <article class="card">
-            <h3>Electronics</h3>
-            <p>Mobiles, audio, wearables, and accessories.</p>
-            <a href="#featured">Explore Electronics</a>
-          </article>
-          <article class="card">
-            <h3>Home & Kitchen</h3>
-            <p>Appliances, storage, and time-saving tools.</p>
-            <a href="#featured">Explore Home</a>
-          </article>
-          <article class="card">
-            <h3>Beauty & Care</h3>
-            <p>Grooming, skincare, and wellness picks.</p>
-            <a href="#featured">Explore Beauty</a>
-          </article>
-          <article class="card">
-            <h3>Fitness</h3>
-            <p>Gear, trackers, and recovery essentials.</p>
-            <a href="#featured">Explore Fitness</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured" class="section featured">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Featured Deals</h2>
-          <p>Handpicked offers with strong value. Replace these with your affiliate links.</p>
-        </div>
-        <div class="grid deal-grid">
-          <article class="deal">
-            <div class="deal-top">
-              <span class="pill">Top Pick</span>
-              <span class="score">9.2/10</span>
-            </div>
-            <h3>Phone Accessory Bundle</h3>
-            <p>Case + screen guard + fast charger.</p>
-            <div class="deal-meta">
-              <span class="old">$49</span>
-              <span class="new">$29</span>
-              <span class="cut">41% off</span>
-            </div>
-            <a class="cta" href="#" aria-label="Affiliate link">Get Deal</a>
-          </article>
-          <article class="deal">
-            <div class="deal-top">
-              <span class="pill">Limited</span>
-              <span class="score">8.7/10</span>
-            </div>
-            <h3>Budget Laptop</h3>
-            <p>SSD, 8GB RAM, work-ready.</p>
-            <div class="deal-meta">
-              <span class="old">$549</span>
-              <span class="new">$429</span>
-              <span class="cut">22% off</span>
-            </div>
-            <a class="cta" href="#" aria-label="Affiliate link">Get Deal</a>
-          </article>
-          <article class="deal">
-            <div class="deal-top">
-              <span class="pill">Editor’s</span>
-              <span class="score">9.0/10</span>
-            </div>
-            <h3>Premium Mixer</h3>
-            <p>Metal body, 5-speed, warranty.</p>
-            <div class="deal-meta">
-              <span class="old">$139</span>
-              <span class="new">$99</span>
-              <span class="cut">28% off</span>
-            </div>
-            <a class="cta" href="#" aria-label="Affiliate link">Get Deal</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="guides" class="section guides">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Buying Guides</h2>
-          <p>Short guides you can expand into articles or blog posts.</p>
-        </div>
-        <div class="grid cards">
-          <article class="card">
-            <h3>How we pick deals</h3>
-            <p>We look at price history, specs, and seller trust.</p>
-            <a href="#">Read guide</a>
-          </article>
-          <article class="card">
-            <h3>Phone under $300</h3>
-            <p>Best value phones with solid cameras.</p>
-            <a href="#">Read guide</a>
-          </article>
-          <article class="card">
-            <h3>Kitchen essentials</h3>
-            <p>Starter appliances that save time daily.</p>
-            <a href="#">Read guide</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section newsletter">
-      <div class="wrap newsletter-inner">
+      <div class="container hero-grid one-col">
         <div>
-          <h2>Weekly Deal Drop</h2>
-          <p>One email, only when there’s real value.</p>
+          <p class="eyebrow">Affiliate Update Hub</p>
+          <h1>Fast deal updates without product clutter on homepage.</h1>
+          <p class="hero-copy">
+            Homepage ka purpose trust, process aur policy clarity dena hai.
+            Sare active products and buy links sirf Products page par milenge.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/products.html">Go To Products Page</a>
+            <a class="btn btn-muted" href="/legal.html">Read Legal</a>
+          </div>
+          <p class="disclaimer">Disclosure: Links on the products page may be affiliate links. We may earn commission at no extra cost to you.</p>
         </div>
-        <form class="form" onsubmit="return false;">
-          <input type="email" placeholder="you@email.com" required />
-          <button class="cta" type="submit">Notify Me</button>
-        </form>
       </div>
     </section>
 
-    <section id="faq" class="section faq">
-      <div class="wrap">
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How DekhoDeal Works</h2>
+          <p>Simple format for Telegram/WhatsApp style deal updates.</p>
+        </div>
+        <div class="steps">
+          <article>
+            <h3>1. Deals collected</h3>
+            <p>Trending offers from trusted marketplaces like Flipkart and AJIO are shortlisted.</p>
+          </article>
+          <article>
+            <h3>2. Posted in text format</h3>
+            <p>No heavy images. Direct title, price highlight, and buy link structure.</p>
+          </article>
+          <article>
+            <h3>3. Updated frequently</h3>
+            <p>Old deals can expire fast, so users should always verify final checkout price.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quick-links">
+        <article class="info-card">
+          <h2>Legal Page</h2>
+          <p>Affiliate disclosure, disclaimer, privacy and terms in one dedicated page.</p>
+          <a class="btn btn-primary" href="/legal.html">Open Legal</a>
+        </article>
+        <article class="info-card">
+          <h2>Contact Page</h2>
+          <p>Business queries, corrections and support details ke liye separate contact page.</p>
+          <a class="btn btn-primary" href="/contact.html">Open Contact</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
         <div class="section-head">
           <h2>FAQ</h2>
         </div>
-        <div class="grid faq-grid">
-          <article>
-            <h3>Is this an affiliate website?</h3>
-            <p>Yes. We may earn a commission when you purchase through our links. It doesn’t change your price.</p>
-          </article>
-          <article>
-            <h3>How often are deals updated?</h3>
-            <p>We aim to refresh key categories daily and feature lists weekly.</p>
-          </article>
-          <article>
-            <h3>Do you verify every seller?</h3>
-            <p>We link only to trusted marketplaces and verified sellers whenever possible.</p>
-          </article>
-        </div>
+        <details>
+          <summary>Homepage par products kyu nahi hain?</summary>
+          <p>Intentional structure hai: products and links only products page par maintain honge.</p>
+        </details>
+        <details>
+          <summary>Deal expired ho jaye to?</summary>
+          <p>Checkout par final price and stock merchant site se confirm karein. Expired deals remove/update kiye jaate hain.</p>
+        </details>
+        <details>
+          <summary>Kya direct buying safe hai?</summary>
+          <p>Hum sirf merchant listing links share karte hain. Payment and order process merchant website/app par hota hai.</p>
+        </details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
+    <div class="container footer-grid">
       <div>
-        <p class="footer-brand">DekhoDeal</p>
-        <p class="micro">Affiliate Disclosure: We may earn commissions from qualifying purchases. Prices and availability may change.</p>
+        <p class="brand-title">DekhoDeal</p>
+        <p>Home for affiliate deal updates.</p>
       </div>
-      <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="mailto:hello@dekhodeal.website">Contact</a>
+      <div>
+        <p>Contact: sarvesh.kumar12m@gmail.com</p>
+        <p>Copyright <span id="year"></span> DekhoDeal. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

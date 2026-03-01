@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60" role="img" aria-label="Dekho Deal logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#0ea577" offset="0%"/>
+      <stop stop-color="#2563eb" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop stop-color="#0ea577" offset="0%"/>
+      <stop stop-color="#2563eb" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="220" height="60" rx="16" fill="url(#g)" opacity="0.08"/>
+  <rect x="6" y="6" width="208" height="48" rx="14" fill="#ffffff" stroke="url(#g2)" stroke-width="1" opacity="0.9"/>
+  <text x="28" y="39" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0f172a">Dekho <tspan fill="#2563eb">Deal</tspan></text>
+</svg>
