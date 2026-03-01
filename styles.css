@@ -409,8 +409,15 @@ h1 {
   font-size: clamp(1.1rem, 2.4vw, 1.5rem);
 }
 
-.deal-post p {
-  margin: 0.38rem 0;
+
+.post-meta {
+  margin: 0 0 0.55rem;
+  font-size: 0.86rem;
+  color: #64748b;
+}
+
+.post-meta time {
+  font-weight: 600;
 }
 
 .deal-post a {
@@ -555,3 +562,4 @@ summary {
     font-size: 0.88rem;
   }
 }
+

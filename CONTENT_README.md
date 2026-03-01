@@ -33,3 +33,13 @@ Open `products.html` and copy this block inside `.text-feed`:
 1. Update `sitemap.xml` `lastmod` date.
 2. Push changes to GitHub.
 3. Hard refresh browser (`Ctrl+F5`) to clear cache.
+
+## Time Stamp Rule (Important)
+- Har new deal block me heading ke niche `Posted:` line add karein.
+- Format use karein:
+
+```html
+<p class="post-meta">Posted: <time datetime="2026-03-01T13:14:35+05:30">01 Mar 2026, 1:14 PM IST</time></p>
+```
+
+- New deals always top par insert karein.
