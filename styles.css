@@ -118,6 +118,13 @@ body {
   color: var(--brand);
 }
 
+nav[aria-label="Primary"] {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 .hero {
   padding: 4.3rem 0 2.5rem;
 }
@@ -503,6 +510,10 @@ summary {
     flex-wrap: wrap;
   }
 
+  nav[aria-label="Primary"] {
+    width: 100%;
+  }
+
   .hero-grid,
   .deal-grid,
   .quick-links,
@@ -563,3 +574,57 @@ summary {
   }
 }
 
+
+.telegram-float {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  text-decoration: none;
+  background: #229ed9;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.72rem 1rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(34, 158, 217, 0.35);
+}
+
+.telegram-float:hover {
+  background: #1b86b8;
+}
+
+@media (max-width: 560px) {
+  .telegram-float {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    padding: 0.62rem 0.88rem;
+    font-size: 0.9rem;
+  }
+}
+
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.lang-btn {
+  border: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-weight: 700;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.lang-btn.is-active {
+  background: var(--text);
+  color: #ffffff;
+}
+
+@media (max-width: 560px) {
+  .lang-toggle {
+    margin-top: 0.35rem;
+  }
+}

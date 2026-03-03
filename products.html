@@ -10,6 +10,11 @@
   <meta property="og:description" content="Join Telegram for real-time deal posts." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dekhodeal.website/products.html" />
+  <meta property="og:image" content="https://dekhodeal.website/logo.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Deals | DekhoDeal" />
+  <meta name="twitter:description" content="Join Telegram for real-time deal posts." />
+  <meta name="twitter:image" content="https://dekhodeal.website/logo.svg" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="canonical" href="https://dekhodeal.website/products.html" />
@@ -27,11 +32,15 @@
       </div>
       <nav aria-label="Primary">
         <ul class="nav-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/legal.html">Legal</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="https://t.me/DekhoDeal" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="/" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="/legal.html" data-en="Legal" data-hi="लीगल">Legal</a></li>
+          <li><a href="/contact.html" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+          <li><a href="https://t.me/DekhoDeal" target="_blank" rel="noopener" data-en="Telegram" data-hi="टेलीग्राम">Telegram</a></li>
         </ul>
+        <div class="lang-toggle" aria-label="Language switch">
+          <button type="button" class="lang-btn" data-lang-switch="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-btn" data-lang-switch="hi" aria-pressed="false">हिन्दी</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -40,11 +49,11 @@
     <section class="hero hero-compact">
       <div class="container hero-grid one-col">
         <div>
-          <p class="eyebrow">Deals Notice</p>
-          <h1>Deals are now posted directly on Telegram</h1>
-          <p class="hero-copy">Fast updates ke liye sab latest products and offers Telegram channel par share kiye ja rahe hain.</p>
+          <p class="eyebrow" data-en="Deals Notice" data-hi="डील्स नोटिस">Deals Notice</p>
+          <h1 data-en="Deals are now posted directly on Telegram" data-hi="अब सभी डील्स सीधे टेलीग्राम पर पोस्ट होती हैं">Deals are now posted directly on Telegram</h1>
+          <p class="hero-copy" data-en="For faster updates, all latest products and offers are shared on our Telegram channel." data-hi="तेज अपडेट के लिए सभी लेटेस्ट प्रोडक्ट्स और ऑफर्स हमारे टेलीग्राम चैनल पर साझा किए जाते हैं।">For faster updates, all latest products and offers are shared on our Telegram channel.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://t.me/DekhoDeal" target="_blank" rel="noopener">Open Telegram Channel</a>
+            <a class="btn btn-primary" href="https://t.me/DekhoDeal" target="_blank" rel="noopener" data-en="Open Telegram Channel" data-hi="टेलीग्राम चैनल खोलें">Open Telegram Channel</a>
           </div>
         </div>
       </div>
@@ -53,9 +62,9 @@
     <section class="section">
       <div class="container text-feed">
         <article class="deal-post">
-          <h2>Channel Link</h2>
-          <p><strong>Join Here:</strong> <a href="https://t.me/DekhoDeal" target="_blank" rel="noopener">https://t.me/DekhoDeal</a></p>
-          <p>Posted: <time datetime="2026-03-01">01 Mar 2026</time></p>
+          <h2 data-en="Channel Link" data-hi="चैनल लिंक">Channel Link</h2>
+          <p><strong data-en="Join Here:" data-hi="यहाँ जुड़ें:">Join Here:</strong> <a href="https://t.me/DekhoDeal" target="_blank" rel="noopener">https://t.me/DekhoDeal</a></p>
+          <p class="post-meta"><span data-en="Updated:" data-hi="अपडेट किया गया:">Updated:</span> <time datetime="2026-03-03">03 Mar 2026</time></p>
         </article>
       </div>
     </section>
@@ -65,12 +74,12 @@
     <div class="container footer-grid">
       <div>
         <p class="brand-title">DekhoDeal</p>
-        <p>Telegram-first deals platform.</p>
+        <p data-en="Telegram-first deals platform." data-hi="टेलीग्राम-फर्स्ट डील्स प्लेटफॉर्म।">Telegram-first deals platform.</p>
       </div>
       <div>
-        <p>Telegram: <a href="https://t.me/DekhoDeal" target="_blank" rel="noopener" style="color:#93c5fd;">@DekhoDeal</a></p>
-        <p>Contact: sarvesh.kumar12m@gmail.com</p>
-        <p>Copyright <span id="year"></span> DekhoDeal. All rights reserved.</p>
+        <p><span data-en="Telegram:" data-hi="टेलीग्राम:">Telegram:</span> <a href="https://t.me/DekhoDeal" target="_blank" rel="noopener" style="color:#93c5fd;">@DekhoDeal</a></p>
+        <p><span data-en="Contact:" data-hi="संपर्क:">Contact:</span> sarvesh.kumar12m@gmail.com</p>
+        <p><span data-en="Copyright" data-hi="कॉपीराइट">Copyright</span> <span id="year"></span> DekhoDeal. <span data-en="All rights reserved." data-hi="सभी अधिकार सुरक्षित।">All rights reserved.</span></p>
       </div>
     </div>
   </footer>
