@@ -393,6 +393,21 @@ h1 {
   font-size: 1.07rem;
 }
 
+.founder-photo {
+  width: min(260px, 100%);
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.founder-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
 .legal-list {
   margin: 0;
   padding-left: 1.1rem;
@@ -555,6 +570,14 @@ summary {
 
   .deal-post h2 {
     font-size: 1.05rem;
+  }
+
+  .founder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-photo {
+    width: min(220px, 100%);
   }
 }
 

@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://dekhodeal.website/about.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dekhodeal.website/products.html</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>weekly</changefreq>
