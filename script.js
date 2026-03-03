@@ -39,3 +39,47 @@ if (savedLanguage === 'hi' || savedLanguage === 'en') {
   const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith('hi') ? 'hi' : 'en';
   applyLanguage(browserLanguage);
 }
+
+const siteHeader = document.querySelector('.site-header');
+const menuButton = document.querySelector('.menu-toggle');
+const primaryNav = document.querySelector('.primary-nav');
+
+if (siteHeader && menuButton && primaryNav) {
+  const MOBILE_BREAKPOINT = 920;
+
+  const setMenuState = (open) => {
+    siteHeader.classList.toggle('nav-open', open);
+    menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    primaryNav.hidden = !open;
+  };
+
+  const syncMenuForViewport = () => {
+    const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+    if (isMobile) {
+      setMenuState(false);
+    } else {
+      siteHeader.classList.remove('nav-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      primaryNav.hidden = false;
+    }
+  };
+
+  syncMenuForViewport();
+
+  menuButton.addEventListener('click', () => {
+    const open = primaryNav.hidden;
+    setMenuState(open);
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!siteHeader.contains(event.target)) {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        setMenuState(false);
+      }
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    syncMenuForViewport();
+  });
+}

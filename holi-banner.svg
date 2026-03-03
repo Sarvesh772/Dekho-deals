@@ -1,0 +1,55 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-label="Happy Holi banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff7a59"/>
+      <stop offset="25%" stop-color="#ffcf4a"/>
+      <stop offset="50%" stop-color="#39d98a"/>
+      <stop offset="75%" stop-color="#37b3ff"/>
+      <stop offset="100%" stop-color="#a46bff"/>
+    </linearGradient>
+    <radialGradient id="powderPink" cx="0.2" cy="0.2" r="0.7">
+      <stop offset="0%" stop-color="#ffd0ec" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff7ac6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="powderBlue" cx="0.8" cy="0.25" r="0.75">
+      <stop offset="0%" stop-color="#d6edff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#57b5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="powderGreen" cx="0.5" cy="0.85" r="0.8">
+      <stop offset="0%" stop-color="#d7ffe8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#48d48c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <rect width="1600" height="520" fill="#ffffff" opacity="0.18"/>
+
+  <ellipse cx="300" cy="120" rx="270" ry="170" fill="url(#powderPink)"/>
+  <ellipse cx="1280" cy="120" rx="320" ry="185" fill="url(#powderBlue)"/>
+  <ellipse cx="820" cy="430" rx="420" ry="210" fill="url(#powderGreen)"/>
+
+  <g filter="url(#soft)" opacity="0.75">
+    <circle cx="150" cy="430" r="55" fill="#ff5fa1"/>
+    <circle cx="250" cy="390" r="38" fill="#ffd85e"/>
+    <circle cx="1380" cy="420" r="62" fill="#44d58f"/>
+    <circle cx="1480" cy="360" r="35" fill="#49b2ff"/>
+  </g>
+
+  <g opacity="0.88">
+    <circle cx="460" cy="140" r="10" fill="#fff"/>
+    <circle cx="520" cy="100" r="7" fill="#fff"/>
+    <circle cx="1080" cy="180" r="9" fill="#fff"/>
+    <circle cx="1140" cy="120" r="6" fill="#fff"/>
+    <circle cx="990" cy="360" r="8" fill="#fff"/>
+    <circle cx="640" cy="380" r="9" fill="#fff"/>
+  </g>
+
+  <rect x="180" y="120" width="1240" height="280" rx="36" fill="#0f1b39" opacity="0.82"/>
+
+  <text x="800" y="235" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk','Segoe UI',sans-serif" font-weight="700" font-size="78" letter-spacing="1">Happy Holi</text>
+  <text x="800" y="295" text-anchor="middle" fill="#d6e7ff" font-family="'Nunito','Segoe UI',sans-serif" font-size="36">Rangon ke saath best deals ka celebration!</text>
+  <text x="800" y="345" text-anchor="middle" fill="#8fe7ff" font-family="'Nunito','Segoe UI',sans-serif" font-size="28">DekhoDeal x Telegram</text>
+</svg>
