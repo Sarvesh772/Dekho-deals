@@ -1,0 +1,40 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE0EF"/>
+      <stop offset="0.45" stop-color="#FFD4F6"/>
+      <stop offset="1" stop-color="#E9E6FF"/>
+    </linearGradient>
+    <linearGradient id="tag" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B40F7A"/>
+      <stop offset="1" stop-color="#6F2DBD"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="420" rx="34" fill="url(#bg)"/>
+
+  <circle cx="125" cy="96" r="62" fill="#FFD0E7" opacity="0.65"/>
+  <circle cx="1490" cy="84" r="78" fill="#E6D6FF" opacity="0.65"/>
+  <circle cx="1470" cy="340" r="56" fill="#FFD6E8" opacity="0.55"/>
+
+  <g opacity="0.9">
+    <circle cx="144" cy="300" r="34" fill="#FFFFFF"/>
+    <circle cx="144" cy="300" r="12" fill="#F8B4D9"/>
+    <circle cx="178" cy="300" r="16" fill="#FFD9EA"/>
+    <circle cx="110" cy="300" r="16" fill="#FFD9EA"/>
+    <circle cx="144" cy="266" r="16" fill="#FFD9EA"/>
+    <circle cx="144" cy="334" r="16" fill="#FFD9EA"/>
+  </g>
+
+  <rect x="460" y="84" width="678" height="56" rx="28" fill="url(#tag)"/>
+  <text x="799" y="120" text-anchor="middle" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#FFFFFF">
+    8 March • International Women's Day
+  </text>
+
+  <text x="800" y="220" text-anchor="middle" font-size="76" font-family="Segoe UI, Arial, sans-serif" font-weight="800" fill="#31134A">
+    Happy Women's Day
+  </text>
+  <text x="800" y="275" text-anchor="middle" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="600" fill="#5B2C75">
+    Celebrate strength, courage and achievements
+  </text>
+</svg>
