@@ -158,36 +158,6 @@ nav[aria-label="Primary"] {
   color: #ffffff;
 }
 
-.womens-day-wrap {
-  padding: 1.2rem 0 0;
-}
-
-.womens-day-banner {
-  margin: 0;
-  border: 1px solid #f2c6df;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: #fff3fb;
-  box-shadow: var(--shadow);
-}
-
-.womens-day-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.womens-day-caption {
-  margin: 0;
-  padding: 0.65rem 0.9rem;
-  background: #fff7fc;
-  border-top: 1px solid #f5d9ea;
-  color: #6b2c53;
-  font-size: 0.92rem;
-  font-weight: 700;
-  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
-}
-
 .hero {
   padding: 4.1rem 0 2.3rem;
 }
@@ -517,15 +487,6 @@ summary {
 }
 
 @media (max-width: 560px) {
-  .womens-day-wrap {
-    padding-top: 0.8rem;
-  }
-
-  .womens-day-caption {
-    font-size: 0.84rem;
-    padding: 0.56rem 0.7rem;
-  }
-
   .hero {
     padding-top: 3.4rem;
   }
