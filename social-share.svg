@@ -1,0 +1,51 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="78" y1="48" x2="1112" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9F7F4"/>
+      <stop offset="0.48" stop-color="#F7FAFF"/>
+      <stop offset="1" stop-color="#E8EEFF"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0E7A6F"/>
+      <stop offset="1" stop-color="#2F57D7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <circle cx="1048" cy="110" r="90" fill="#DCE8FF"/>
+  <circle cx="111" cy="525" r="110" fill="#DDF4EF"/>
+  <circle cx="985" cy="540" r="46" fill="#EAF0FF"/>
+
+  <rect x="78" y="72" width="276" height="74" rx="22" fill="#FFFFFF" stroke="#AEC9FF" stroke-width="2"/>
+  <rect x="72" y="66" width="276" height="74" rx="22" stroke="#5FD3BA" stroke-width="2"/>
+  <text x="102" y="118" fill="#111A33" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Dekho</text>
+  <text x="238" y="118" fill="#2F57D7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Deal</text>
+
+  <text x="78" y="238" fill="#111A33" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800">Daily Deals</text>
+  <text x="78" y="322" fill="#111A33" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800">on WhatsApp</text>
+
+  <text x="78" y="390" fill="#4B5675" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">
+    Fast shopping offers, clean trust pages, simple updates.
+  </text>
+  <text x="78" y="430" fill="#4B5675" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">
+    Flipkart, AJIO, Myntra and more in one place.
+  </text>
+
+  <rect x="78" y="480" width="392" height="70" rx="24" fill="url(#cta)"/>
+  <text x="120" y="524" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Join WhatsApp Channel</text>
+
+  <rect x="760" y="170" width="332" height="270" rx="30" fill="#FFFFFF" stroke="#D7DEEF" stroke-width="2"/>
+  <rect x="790" y="202" width="252" height="42" rx="16" fill="#EAFBF7"/>
+  <text x="820" y="230" fill="#0A6259" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Real-Time Deal Updates</text>
+
+  <rect x="790" y="270" width="196" height="22" rx="11" fill="#E8EEFF"/>
+  <rect x="790" y="306" width="238" height="22" rx="11" fill="#E8EEFF"/>
+  <rect x="790" y="342" width="216" height="22" rx="11" fill="#E8EEFF"/>
+
+  <rect x="790" y="388" width="170" height="36" rx="18" fill="#25D366"/>
+  <text x="822" y="412" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">WhatsApp Ready</text>
+
+  <text x="78" y="590" fill="#6A7695" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">
+    dekhodeal.website
+  </text>
+</svg>

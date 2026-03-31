@@ -88,11 +88,13 @@ if (siteHeader && menuButton && primaryNav) {
 if (shareSiteButton) {
   shareSiteButton.addEventListener('click', async () => {
     const shareUrl = window.location.origin;
+    const shareText = 'DekhoDeal par daily shopping deals, offer alerts aur savings updates milte hain. Join now:';
     const shareData = {
       title: 'DekhoDeal',
-      text: 'Check DekhoDeal for daily shopping deals and WhatsApp updates.',
+      text: shareText,
       url: shareUrl,
     };
+    const copyText = `${shareText} ${shareUrl}`;
 
     try {
       if (navigator.share) {
@@ -101,7 +103,7 @@ if (shareSiteButton) {
       }
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        await navigator.clipboard.writeText(shareUrl);
+        await navigator.clipboard.writeText(copyText);
         const nextLabel = document.documentElement.lang === 'hi' ? 'लिंक कॉपी हो गया' : 'Link copied';
         shareSiteButton.textContent = nextLabel;
         window.setTimeout(() => {
