@@ -31,21 +31,21 @@
     Flipkart, AJIO, Myntra and more in one place.
   </text>
 
-  <rect x="78" y="480" width="392" height="70" rx="24" fill="url(#cta)"/>
-  <text x="120" y="524" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Join WhatsApp Channel</text>
+  <rect x="78" y="480" width="438" height="70" rx="24" fill="url(#cta)"/>
+  <text x="118" y="524" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">Join WhatsApp Channel</text>
 
-  <rect x="760" y="170" width="332" height="270" rx="30" fill="#FFFFFF" stroke="#D7DEEF" stroke-width="2"/>
-  <rect x="790" y="202" width="252" height="42" rx="16" fill="#EAFBF7"/>
-  <text x="820" y="230" fill="#0A6259" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Real-Time Deal Updates</text>
+  <rect x="790" y="170" width="332" height="270" rx="30" fill="#FFFFFF" stroke="#D7DEEF" stroke-width="2"/>
+  <rect x="820" y="202" width="262" height="42" rx="16" fill="#EAFBF7"/>
+  <text x="850" y="230" fill="#0A6259" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">Real-Time Deal Updates</text>
 
-  <rect x="790" y="270" width="196" height="22" rx="11" fill="#E8EEFF"/>
-  <rect x="790" y="306" width="238" height="22" rx="11" fill="#E8EEFF"/>
-  <rect x="790" y="342" width="216" height="22" rx="11" fill="#E8EEFF"/>
+  <rect x="820" y="270" width="196" height="22" rx="11" fill="#E8EEFF"/>
+  <rect x="820" y="306" width="238" height="22" rx="11" fill="#E8EEFF"/>
+  <rect x="820" y="342" width="216" height="22" rx="11" fill="#E8EEFF"/>
 
-  <rect x="790" y="388" width="170" height="36" rx="18" fill="#25D366"/>
-  <text x="822" y="412" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">WhatsApp Ready</text>
+  <rect x="840" y="388" width="214" height="36" rx="18" fill="#25D366"/>
+  <text x="880" y="412" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">WhatsApp Ready</text>
 
   <text x="78" y="590" fill="#6A7695" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">
-    dekhodeal.website
+    htts://dekhodeal.website
   </text>
 </svg>
