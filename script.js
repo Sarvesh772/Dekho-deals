@@ -43,6 +43,7 @@ if (savedLanguage === 'hi' || savedLanguage === 'en') {
 const siteHeader = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('.primary-nav');
+const shareSiteButton = document.querySelector('[data-share-site]');
 
 if (siteHeader && menuButton && primaryNav) {
   const MOBILE_BREAKPOINT = 920;
@@ -81,5 +82,35 @@ if (siteHeader && menuButton && primaryNav) {
 
   window.addEventListener('resize', () => {
     syncMenuForViewport();
+  });
+}
+
+if (shareSiteButton) {
+  shareSiteButton.addEventListener('click', async () => {
+    const shareUrl = window.location.origin;
+    const shareData = {
+      title: 'DekhoDeal',
+      text: 'Check DekhoDeal for daily shopping deals and WhatsApp updates.',
+      url: shareUrl,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        return;
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+        const nextLabel = document.documentElement.lang === 'hi' ? 'लिंक कॉपी हो गया' : 'Link copied';
+        shareSiteButton.textContent = nextLabel;
+        window.setTimeout(() => {
+          const resetLabel = document.documentElement.lang === 'hi' ? 'वेबसाइट शेयर करें' : 'Share Website';
+          shareSiteButton.textContent = resetLabel;
+        }, 1800);
+      }
+    } catch (_error) {
+      // Ignore share/copy errors to avoid blocking the page experience.
+    }
   });
 }

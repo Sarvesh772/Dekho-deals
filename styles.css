@@ -280,10 +280,67 @@ h1 {
   gap: 0.9rem;
 }
 
+.keyword-cloud-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(242, 247, 255, 0.98));
+}
+
+.keyword-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+
+.keyword-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.72rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
 .feature-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.share-banner {
+  display: grid;
+  grid-template-columns: 1.35fr auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(260px 160px at 0% 0%, rgba(14, 122, 111, 0.12), transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 246, 255, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.share-banner h3 {
+  margin: 0 0 0.42rem;
+  font-size: 1.18rem;
+  line-height: 1.25;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+.share-banner p:last-child {
+  margin-bottom: 0;
+}
+
+.share-banner-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .feature-tile {
@@ -637,8 +694,13 @@ summary {
   .footer-grid,
   .founder-layout,
   .profile-showcase,
-  .contact-hero-card {
+  .contact-hero-card,
+  .share-banner {
     grid-template-columns: 1fr;
+  }
+
+  .share-banner-actions {
+    justify-content: flex-start;
   }
 }
 
