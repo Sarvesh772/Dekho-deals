@@ -574,13 +574,20 @@ summary {
 
 @media (max-width: 920px) {
   .site-header .container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
   }
+
+  .brand-row {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
   .menu-toggle {
     display: inline-flex;
     align-items: center;
-    align-self: flex-start;
+    margin-left: auto;
+    flex: 0 0 auto;
   }
 
   nav.primary-nav {
