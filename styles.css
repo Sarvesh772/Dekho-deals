@@ -158,6 +158,33 @@ nav[aria-label="Primary"] {
   color: #ffffff;
 }
 
+.promo-banner-section {
+  padding: 1rem 0 0;
+}
+
+.promo-banner-link {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.promo-banner-link:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
+}
+
+.promo-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+}
+
 .hero {
   padding: 4.1rem 0 2.3rem;
 }
@@ -719,3 +746,4 @@ summary {
   }
 
 }
+
