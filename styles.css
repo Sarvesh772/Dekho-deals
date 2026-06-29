@@ -716,6 +716,7 @@ summary {
   .hero-grid,
   .feature-strip,
   .quick-links,
+  .quick-links-three,
   .premium-grid,
   .footer-grid,
   .founder-layout,
@@ -769,4 +770,7 @@ summary {
 .btn-card:hover {
   filter: brightness(0.97);
 }
+
+
+
 
