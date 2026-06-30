@@ -771,6 +771,15 @@ summary {
   filter: brightness(0.97);
 }
 
+@media (max-width: 920px) {
+  .quick-links-three {
+    grid-template-columns: 1fr;
+  }
+}
 
-
+@media (max-width: 560px) {
+  .quick-links-three .info-card {
+    border-radius: 18px;
+  }
+}
 
