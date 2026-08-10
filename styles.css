@@ -183,7 +183,28 @@ nav[aria-label="Primary"] {
   height: auto;
   object-fit: contain;
 }
+.promo-banner-cta {
+  text-align: center;
+  margin-top: 16px;
+}
 
+.freedom-sale-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff7a00, #2874f0);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.freedom-sale-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
 .hero {
   padding: 4.1rem 0 2.3rem;
 }
