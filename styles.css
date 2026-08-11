@@ -181,15 +181,19 @@ nav[aria-label="Primary"] {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  aspect-ratio: 1123 / 400;
+  object-fit: cover;
 }
+
 .promo-banner-cta {
   text-align: center;
   margin-top: 16px;
 }
 
 .freedom-sale-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 32px;
   border-radius: 999px;
   background: linear-gradient(90deg, #ff7a00, #2874f0);
@@ -759,6 +763,24 @@ summary {
 
   .site-logo {
     width: 168px;
+  }
+
+  .promo-banner-section {
+    padding-top: 0.75rem;
+  }
+
+  .promo-banner-link {
+    border-radius: 16px;
+  }
+
+  .promo-banner-cta {
+    margin-top: 0.7rem;
+  }
+
+  .freedom-sale-button {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
   }
 
   .text-feed,
