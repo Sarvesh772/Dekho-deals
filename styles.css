@@ -158,56 +158,178 @@ nav[aria-label="Primary"] {
   color: #ffffff;
 }
 
+/* ================================
+   PROMO BANNER
+================================ */
+
 .promo-banner-section {
-  padding: 1rem 0 0;
+  width: 100%;
+  padding: 22px 0 28px;
+  box-sizing: border-box;
 }
 
+.promo-banner-section .container {
+  width: min(100% - 32px, 1460px);
+  margin: 0 auto;
+}
+
+/* Banner */
 .promo-banner-link {
   display: block;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  overflow: hidden;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  width: 100%;
   text-decoration: none;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 22px;
 }
 
-.promo-banner-link:hover {
-  transform: translateY(-1px);
-  transition: transform 0.2s ease;
-}
-
-.promo-banner-image {
+.freedom-banner-image {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1123 / 400;
-  object-fit: cover;
+  max-width: 100%;
+  border-radius: 22px;
+  object-fit: contain;
 }
 
+/* ================================
+   CTA BUTTON
+================================ */
+
 .promo-banner-cta {
-  text-align: center;
-  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 18px;
 }
 
 .freedom-sale-button {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 30px;
   border-radius: 999px;
+
   background: linear-gradient(90deg, #ff7a00, #2874f0);
-  color: #fff;
+  color: #ffffff;
+
   font-size: 17px;
   font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
   text-decoration: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .freedom-sale-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+}
+
+.freedom-sale-button:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .promo-banner-section {
+    padding: 16px 0 24px;
+  }
+
+  .promo-banner-section .container {
+    width: min(100% - 24px, 700px);
+  }
+
+  .promo-banner-link {
+    border-radius: 16px;
+  }
+
+  .freedom-banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .promo-banner-cta {
+    margin-top: 14px;
+  }
+
+  .freedom-sale-button {
+    min-height: 50px;
+    padding: 0 26px;
+    font-size: 16px;
+  }
+}
+
+
+/* ================================
+   SMARTPHONE
+================================ */
+
+@media (max-width: 480px) {
+
+  .promo-banner-section {
+    padding: 12px 0 20px;
+  }
+
+  .promo-banner-section .container {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
+
+  .promo-banner-link {
+    border-radius: 13px;
+  }
+
+  .freedom-banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 13px;
+  }
+
+  .promo-banner-cta {
+    margin-top: 12px;
+    padding: 0 2px;
+  }
+
+  .freedom-sale-button {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 14px;
+    border-radius: 14px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+}
+
+
+/* ================================
+   VERY SMALL PHONES
+================================ */
+
+@media (max-width: 360px) {
+
+  .promo-banner-section .container {
+    width: calc(100% - 16px);
+  }
+
+  .freedom-sale-button {
+    min-height: 48px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
 }
 .hero {
   padding: 4.1rem 0 2.3rem;
