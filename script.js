@@ -45,6 +45,44 @@ const menuButton = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('.primary-nav');
 const shareSiteButton = document.querySelector('[data-share-site]');
 
+const promoTrack = document.querySelector('.promo-banner-track');
+const sliderDots = document.querySelectorAll('.slider-dot');
+let promoActiveIndex = 0;
+let promoAutoRotate = null;
+
+function updatePromoSlide(index) {
+  if (!promoTrack) return;
+  const slides = promoTrack.querySelectorAll('.promo-slide');
+  if (!slides.length) return;
+
+  promoActiveIndex = (index + slides.length) % slides.length;
+  promoTrack.style.transform = `translateX(-${promoActiveIndex * 100}%)`;
+
+  sliderDots.forEach((dot, dotIndex) => {
+    dot.classList.toggle('is-active', dotIndex === promoActiveIndex);
+  });
+}
+
+function startPromoRotation() {
+  if (promoAutoRotate) {
+    clearInterval(promoAutoRotate);
+  }
+  promoAutoRotate = setInterval(() => {
+    updatePromoSlide(promoActiveIndex + 1);
+  }, 5500);
+}
+
+if (sliderDots.length && promoTrack) {
+  sliderDots.forEach((dot, dotIndex) => {
+    dot.addEventListener('click', () => {
+      updatePromoSlide(dotIndex);
+      startPromoRotation();
+    });
+  });
+  updatePromoSlide(0);
+  startPromoRotation();
+}
+
 if (siteHeader && menuButton && primaryNav) {
   const MOBILE_BREAKPOINT = 920;
 

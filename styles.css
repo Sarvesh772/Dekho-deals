@@ -164,7 +164,7 @@ nav[aria-label="Primary"] {
 
 .promo-banner-section {
   width: 100%;
-  padding: 22px 0 28px;
+  padding: 22px 0 18px;
   box-sizing: border-box;
 }
 
@@ -173,68 +173,102 @@ nav[aria-label="Primary"] {
   margin: 0 auto;
 }
 
-/* Banner */
+.promo-banner-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  max-width: 100%;
+  aspect-ratio: 16 / 7;
+  min-height: 260px;
+}
+
+.promo-banner-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.promo-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .promo-banner-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   text-decoration: none;
   line-height: 0;
   overflow: hidden;
-  border-radius: 22px;
+  flex: 1;
 }
 
-.freedom-banner-image {
-  display: block;
+.promo-slide-image {
   width: 100%;
-  height: auto;
+  height: 450px;
   max-width: 100%;
-  border-radius: 22px;
-  object-fit: contain;
+  border-radius: 22px 22px 0 0;
+  object-fit: auto;
 }
 
-/* ================================
-   CTA BUTTON
-================================ */
-
-.promo-banner-cta {
+.promo-slide-footer {
+  padding: 14px 18px 18px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 18px;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
 }
 
-.freedom-sale-button {
+.promo-slide-action {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   min-height: 52px;
   padding: 0 30px;
   border-radius: 999px;
-
   background: linear-gradient(90deg, #ff7a00, #2874f0);
   color: #ffffff;
-
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
   text-decoration: none;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.freedom-sale-button:hover {
+.promo-slide-action:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
 }
 
-.freedom-sale-button:active {
+.promo-slide-action:active {
   transform: translateY(0);
+}
+
+.promo-slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 14px 0 10px;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(17, 26, 51, 0.16);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.slider-dot.is-active {
+  background: var(--brand);
+  transform: scale(1.1);
 }
 
 
@@ -253,20 +287,20 @@ nav[aria-label="Primary"] {
   }
 
   .promo-banner-link {
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
   }
 
-  .freedom-banner-image {
+  .promo-slide-image {
     width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
   }
 
-  .promo-banner-cta {
-    margin-top: 14px;
+  .promo-slide-footer {
+    padding: 14px 16px 18px;
   }
 
-  .freedom-sale-button {
+  .promo-slide-action {
     min-height: 50px;
     padding: 0 26px;
     font-size: 16px;
@@ -290,21 +324,20 @@ nav[aria-label="Primary"] {
   }
 
   .promo-banner-link {
-    border-radius: 13px;
+    border-radius: 13px 13px 0 0;
   }
 
-  .freedom-banner-image {
+  .promo-slide-image {
     width: 100%;
-    height: auto;
-    border-radius: 13px;
+    height: 190px;
+    object-fit: auto;
   }
 
-  .promo-banner-cta {
-    margin-top: 12px;
-    padding: 0 2px;
+  .promo-slide-footer {
+    padding: 12px 14px 16px;
   }
 
-  .freedom-sale-button {
+  .promo-slide-action {
     width: 100%;
     min-height: 50px;
     padding: 0 14px;
