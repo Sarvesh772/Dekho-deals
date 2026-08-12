@@ -1009,6 +1009,7 @@ summary {
   width: 100%;
   max-width: 1460px;
   margin: 35px auto;
+  padding: 0 10px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -1030,10 +1031,12 @@ summary {
 }
 
 .affiliate-ad-image {
-  width: 97%;
-  height: 450px;
+  display: block;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 20px;
+  object-fit: contain;
 }
 
 .affiliate-ad-button {
@@ -1056,21 +1059,39 @@ summary {
   box-shadow: 0 7px 18px rgba(103, 61, 230, 0.22);
 }
 
+/* 📱 Smartphone */
 @media (max-width: 600px) {
+
   .affiliate-ad {
-    width: calc(100% - 20px);
-    margin: 28px auto;
+    width: 100%;
+    margin: 25px auto;
+    padding: 0 10px;
+  }
+
+  .affiliate-ad-label {
+    font-size: 11px;
+    margin-bottom: 8px;
   }
 
   .affiliate-ad-link {
-    border-radius: 14px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .affiliate-ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
   }
 
   .affiliate-ad-button {
     width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
     box-sizing: border-box;
-    border-radius: 14px;
+
+    border-radius: 12px;
     font-size: 15px;
   }
 }
-
